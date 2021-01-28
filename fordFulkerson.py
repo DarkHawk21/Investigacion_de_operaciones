@@ -1,4 +1,5 @@
 import random
+import os
 
 class Grafos:
     def __init__(self, grafo):
@@ -71,5 +72,7 @@ if numero_de_simulaciones > 0:
             print("  ", index)
         print("Flujo maximo: {} ".format(g.FordFulkerson(fuente, sumidero)))
         print("")
+    
+    os.system("PAUSE")
 else:
     numero_de_simulaciones = int(input("¿Cuantas simulaciones quieres hacer?: "))
